@@ -15,9 +15,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 app.get("/", (req, res) => {
-  res.json({
-    message: "Welcome to the FOOD-API",
-  });
+  res.send(<p>Welcome to the server!</p>);
 });
 
 app.use("/user", userRouter);
